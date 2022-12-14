@@ -1,12 +1,12 @@
 import json
-import contriller
+import controller
 
 
 def create_json():
     json_data = []
     with open('db.json', 'w') as file:
         file.write(json.dumps(json_data, indent=2, ensure_ascii=False))
-    contriller.user_choice()
+    controller.user_choice()
 
 
 def add_to_json():
@@ -25,4 +25,4 @@ def add_to_json():
     with open("db.json", "w") as file:
         json.dump(data, file, indent=2, ensure_ascii=False)
     print('\nНовый контакт успешно добавлен!\n')
-    contriller.user_choice()
+    controller.user_choice()
